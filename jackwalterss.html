@@ -1,7 +1,31 @@
 <head>
   <title>APUSH - jackwalterss</title>
-  <link rel="stylesheet" type="text/css" href="/apush/style.css">
-  <script type="text/javascript" src="/apush/script.js"></script>
+  <style>
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+</style>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
 </head>
 <body>
   <button class="accordion">Chapter 1</button>
