@@ -1,6 +1,401 @@
+<!DOCTYPE html>
+<html>
 <head>
-  <title>APUSH - btodaro</title>
+<style>
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+button.accordion.active, button.accordion:hover {
+    background-color: #ccc;
+}
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+button.accordion.active:after {
+    content: "\2212";
+}
+div.panel {
+    padding: 0 18px;
+    background-color: #DCDCDC;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+p.question {
+    /*background-color: #FFFFA0;*/
+}
+    
+p.answer {
+    padding-bottom: 1em;
+    /*background-color: #A2FF81;*/
+}
+</style>
 </head>
 <body>
 
+<h2><a href="/apush">APUSH</a>: btodaro</h2>
+
+<button class="accordion">Chapter 3</button>
+<div class="panel">
+  <p class="question">The Great Awakening was a reaction to</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- churches' earlier failure to take account of people's emotional needs</p>
+
+  <p class="question">Preachers of the Great Awakening focused on the importance of</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- all of the above</p>
+
+  <p class="question">The Great Awakening had all of the following consequences EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- reduced competition among Protestant sects</p>
+
+  <p class="question">Which of the following is true of immigration to the colonies during the first half of the 18th century?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- Most immigrants came from continental Europe</p>
+
+  <p class="question">In the 18th century, all of the following were generally true about colonial society in America EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- It was impossible for individuals to better themselves economically of socially</p>
+
+  <p class="question">At his trial, John Peter Zenger won acquittal on the grounds that</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- truth could not be libel</p>
+
+  <p class="question">Which of the following did the colonies lack?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- an adequate monetary system</p>
+
+  <p class="question">Which of the following statements accurately describes the governments of all 13 colonies in the mid-18th century?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- One house of the legislature was elected by eligible voters</p>
+
+  <p class="question">"Benjamin Franklin was the epitome of the multitalented colonial American." Each of the following could be used to support this statement EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- military leadership</p>
+
+  <p class="question">Which of the following best represents the "new man" described by Crevecouer?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- a German-speaking farmer on the frontier</p>
+</div>
+
+<button class="accordion">Chapter 6</button>
+<div class="panel">
+  <p class="question">In the 1780s, all of the following contributed to dissatisfaction with the Articles of Confederation EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- high taxes levied by the national government</p>
+
+  <p class="question">Which of the following statements accurately describes an argument of the Anti-Federalists?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- The Constitution lacked a Bill of Rights</p>
+
+  <p class="question">"The U.S. Constitution is a bundle of compromises." Which of the following provisions of the Constitution does NOT reflect support for this statement?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- a national court system separate from the legislature</p>
+
+  <p class="question">In his interpretation of the Constitutional Convention, the historian Charles Beard focused on the importance of</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- economic interests of wealthy elite</p>
+
+  <p class="question">In 1788, the Federalists promised to add a bill of rights to the Constitution in order to</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- persuade state conventions to ratify the Constitution</p>
+
+  <p class="question">Alexander Hamilton's financial program consisted of all of the following EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- payment of subsidies to farmers</p>
+
+  <p class="question">Which of the following was the underlying cause of the other four?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- the French Revolution</p>
+
+  <p class="question">The Virginia and Kentucky Resolutions presented the argument that</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- states could nullify acts of Congress</p>
+
+  <p class="question">The decline in support for the Federalist Party can be traced most directly to its handling of the issue of</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- the Alien and Sedition Acts</p>
+
+  <p class="question">Which of the following was NOT a significant consequence of the election of 1800?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- The U.S. government gave less attention to foreign affairs</p>
+</div>
+
+<button class="accordion">Chapter 8</button>
+<div class="panel">
+  <p class="question">Which of the following statements accurately describes the Monroe Doctrine?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- It declared U.S. opposition to European intervention in the affairs of independent countries of the Western Hemisphere</p>
+
+  <p class="question">The map shows the United States directly after the</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- Missouri Compromise</p>
+
+  <p class="question">Which of the following increased southern planters' reliance on slaves?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- invention of the cotton gin</p>
+
+  <p class="question">The Eerie Canal was significant because it</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- tied the manufacturing of the East to the farming of the West</p>
+
+  <p class="question">A major effect of John Marshall's Supreme Court decisions was to</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- expand federal power and limit the states' power</p>
+
+  <p class="question">Henry Clay's idea of an American System included all of the following EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- state banks</p>
+
+  <p class="question">Which of the following is a correct statement about the United States at the beginning of the Era of Good Feelings?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- Nationalism strongly influenced American culture and politics.</p>
+
+  <p class="question">Which pair of issues aroused the most controversy in 1819 and 1820?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- slavery in Missouri and a financial crisis</p>
+
+  <p class="question">Which of the following best describes changes in the American economy in the 1820s?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- improved transportation in the West, industrialization in the North</p>
+
+  <p class="question">In the first decades of the 19th century, the Industrial Revolution in the United States was supported by developments in all of the following areas EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- craft unions</p>
+
+</div>
+
+<button class="accordion">Chapter 11</button>
+<div class="panel">
+  <p class="question">The Second Great Awakening was characterized by all of the following EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- growing unity among Protestant churches</p>
+
+  <p class="question">Which of the following is true of the American transcendentalists?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- argued for the importance of human intuition and individualism</p>
+
+  <p class="question">According to the cult of domesticity, a woman's proper role was</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- acting as moral leader and educator of the family</p>
+
+  <p class="question">The leading spokesperson for the tax-supported public school movement was</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- Horace Mann</p>
+
+  <p class="question">All of the following were true of the temperance movement EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- it was largely restricted to the souther states</p>
+
+  <p class="question">Dorothea Dix was inspired to dedicated her life to a humanitarian crusade by</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- discovery of the confinement of the mentally ill in local jails</p>
+
+  <p class="question">The abolitionist movement had the effect of</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- bringing the issue of slavery to the forefront of the reform movement</p>
+
+  <p class="question">William Llyod Garrison and the American Antislavery Society supported</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- immediate emancipation of slaves without compensation or emigration</p>
+
+  <p class="question">The Seneca Falls Convention was significant because it</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- issued a historic declaration of women's rights</p>
+
+  <p class="question">Perfectionist aspirations to create a utopian society are best reflected in</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- the founding to New Harmony, Brook Farm, and Fourier Phalanxes</p>
+</div>
+
+<button class="accordion">Chapter 18</button>
+<div class="panel">
+  <p class="question">Which of the following is a correct statement about immigration from 1890-1914?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- Most of the immigrants came from southern and eastern Europe</p>
+
+  <p class="question">Which of the following groups were NOT included among the new immigrants of the late 19C?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- Scandinavian farmers</p>
+
+  <p class="question">All of the following characterized America's large cities in the last decades of the 19C EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- transportation limited to the central business district</p>
+
+  <p class="question">Which of the following were most likely to help immigrants adjust to city life in the late 19C?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- politicians from Tammany Hall</p>
+
+  <p class="question">Settlement houses were characterized by all of the following EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- took little interest in legislative reforms</p>
+
+  <p class="question">Which of the following did NOT contribute to the development of suburbs in the United States?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- European suburban development patterns</p>
+
+  <p class="question">"This association of poverty..." written by</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- Henry George</p>
+
+  <p class="question">Changes in education between 1865 and 1900 included all of the following EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- increased emphasis on classical curriculum</p>
+
+  <p class="question">Which of the following were both examples of realism in 19C literature and art?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- Jack London novel and Ashcan School</p>
+
+  <p class="question">All of the following contributed to the growth of sports and entertainment in late 19C America EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- Puritan ethic and Victorian values</p>
+</div>
+
+<button class="accordion">Chapter 20</button>
+<div class="panel">
+  <p class="question">By the end of the 19C, jingoism in the United States was encouraged by all of the following EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- new immigrants</p>
+
+  <p class="question">Which of the following statements best defines the Open Door policy?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- All nations should have equal trading rights in China</p>
+
+  <p class="question">Which of the following DOES NOT correctly describe how a territory was added to the United States?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- Cuba annexed by Congress</p>
+
+  <p class="question">All of the following concerned US-Japanese relations EXCEPT the</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- Teller Amendment</p>
+
+  <p class="question">Which of the following was an IMMEDIATE cause of the Spanish-American War?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- the sinking of the Maine</p>
+
+  <p class="question">Which of the following best explains the influence of yellow journalism on US foreign policy in the 1890s?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- Sensational news stories stirred the anger of the American public</p>
+
+  <p class="question">The Roosevelt Corollary to the Monroe Doctrine called for</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- intervening in Latin American nations</p>
+
+  <p class="question">Which statement accurately summarizes Theodore Roosevelt's policy on the Panama Canal?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- Roosevelt gave military support to Panama's revolt against Columbia</p>
+
+  <p class="question">Woodrow Wilson's foreign policy differed from that of Theodore Roosevelt and William Howard Taft by its emphasis on</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- the application of moral principles to foreign affairs</p>
+
+  <p class="question">In 1917, countries shaded on the above map were</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- subject to US military intervention</p>
+
+</div>
+
+<button class="accordion">Chapter 24</button>
+<div class="panel">
+  <p class="question">In combating the depression Pres. Herbert Hoover favored all of the following EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- federal relief programs for the unemployed</p>
+
+  <p class="question">"The New Deal brought sweeping changes in American politics and society." Each of the following actions supports this statement EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- increased spending by consumers</p>
+
+  <p class="question">The New Deal legislation that has had the widest impact over the past 60 years is the</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- Social Security Act</p>
+
+  <p class="question">"Economic indicators during Hoover's presidency reached new lows." UP instead of down?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- unemployment</p>
+
+  <p class="question">Of the following, the greatest threat to FDR and the New Deal was</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- Huey Long</p>
+
+  <p class="question">Which of the following pairs of people is closely identified with the bonus march?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- Herbert Hoover and Douglas MacArthur</p>
+
+  <p class="question">All of the following were passed or created by Congress during the second New Deal EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- the National Recovery Administration</p>
+
+  <p class="question">All of the following played a role in causing the Great Depression EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- low tariffs</p>
+
+  <p class="question">The New Deal implemented theories of John Maynard Keynes that stressed the importance of</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- deficit spending for "pump priming"</p>
+
+  <p class="question">In response to conservative rulings of the Supreme Court, Pres. Roosevelt took action that resulted in</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- his first major legislative defeat</p>
+</div>
+
+<button class="accordion">Chapter 26</button>
+<div class="panel">
+  <p class="question">US economic expansion after WWII was encouraged by all of the following EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- Office of Price Administration</p>
+
+  <p class="question">President Truman's domestic policies included support for all of the following EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- the Taft-Hartley Act</p>
+
+  <p class="question">Which of the following was NOT a major issue between the Soviet Union and the US in the postwar years 1945-1950?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- occupation zones in Japan</p>
+
+  <p class="question">"In these circumstances..." from?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- George Kennan's article, "The Source's of Soviet Conduct"</p>
+
+  <p class="question">The primary purpose of the Marshall Plan was to</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- aid the economic recovery of war-devastated Europe</p>
+
+  <p class="question">Which US action is NOT correctly paired with an event in international politics?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- troops sent to Korea--Churchill's Iron Curtain speech</p>
+
+  <p class="question">Which of the following was NOT an issue during the Koean War?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- whether North Korea had committed aggression</p>
+
+  <p class="question">Which of the following contributed the LEAST to the growth of the Red Scare in the 1950's?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- Army-McCarthy hearings</p>
+
+  <p class="question">Which of the following BEST describes Truman's foreign policy from 1945-1952?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- commitment to containing Communist expansion</p>
+
+  <p class="question">The principal reason for the defeat of most Fair Deal programs was</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- opposition by Republicans in Congress</p>
+</div>
+
+<button class="accordion">Chapter 28</button>
+<div class="panel">
+  <p class="question">Which of the following does NOT accurately describe the Kennedy administration?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- Defense spending and the number of nuclear weapons were cut</p>
+
+  <p class="question">Which of the following resulted in the greatest threat of nuclear war during the Kennnedy admin.</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- a US naval blockade in Cuba</p>
+
+  <p class="question">Pres. Johnson's Great Society programs included all of the following EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- ratification of the Equal Rights Amendment to guarantee equality for women</p>
+
+  <p class="question">Which of the following is NOT a correct association of a person with a policy?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- Barry Goldwater--medical care for the poor and elderly</p>
+
+  <p class="question">The Black Muslims and the Black Power movement advocated</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- separatism and self-rule for African Americans</p>
+
+  <p class="question">Which of the following was NOT a ruling of the Warren Court?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- The right to life of an unborn child is guaranteed by the 14th Amendment</p>
+
+  <p class="question">Betty Friedan's book The Feminine Mystique</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- argued that many women could not have fulfilling lives if limited to a traditional role in the home</p>
+
+  <p class="question">The Tonkin Gulf Resolution</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- authorized the president to take all necessary steps to defend US forces and interests in Vietnam</p>
+
+  <p class="question">Which phrase best describes Pres. Johnson's policy in Vietnam?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- gradual military escalation to force N. Vietnam to negotiate</p>
+
+  <p class="question">The Tet offensive resulted in all of the following EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- the military defeat of US forces in S. Vietnam</p>
+</div>
+
+<button class="accordion">Chapter 29</button>
+<div class="panel">
+  <p class="question">Which of the following BEST reflected Pres. Nixon's policy of "Vietnamization"?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- gradual withdrawal of American armed forces from Vietnam</p>
+
+  <p class="question">Richard Nixon's conduct of foreign affairs emphasized all of the following EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- a renewed arms race in ballistic and antiballistic missiles</p>
+
+  <p class="question">The Paris Accords of 1973 included all of the following EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- the US would end all economic and military aid to S. Vietnam</p>
+
+  <p class="question">Under the program of New Federalism, President Nixon sought to</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- shift the responsibility for social programs from the federal to state and local governments</p>
+
+  <p class="question">Richard Nixon's strategy to build a Republican majority for 1972 included all of the following EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- establishing positive relationships with the national media and liberal press</p>
+
+  <p class="question">What caused Richard Nixon to resign in 1974?</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- The White House tapes proved he was guilty of obstruction of justice</p>
+
+  <p class="question">President Gerald Ford lost the most support from the American Republic for</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- his pardon of Richard Nixon</p>
+
+  <p class="question">The main guiding principle of President Carter's foreign policy was</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- human rights</p>
+
+  <p class="question">The US economy in the late 1970s was characterized by all of the following EXCEPT</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- low interest rates</p>
+
+  <p class="question">The US policy of Detente with the Soviet Union ended because of</p>
+  <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;- the Soviet invasion of Afghanistan</p>
+
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
+
 </body>
+</html>
